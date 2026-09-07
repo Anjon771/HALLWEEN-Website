@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Halloween Party | After Dark Event 2026</title>
+  <meta name="title" content="Halloween Party | After Dark Event 2026">
+  <meta name="description" content="Do you dare explore our haunted historic places in the dark this Halloween? Experience Blackwood Manor's haunted mazes, potion taverns, live gothic DJs, and after-dark thrill tours.">
+  <meta property="og:title" content="Halloween Party | After Dark Event 2026">
+  <meta property="og:description" content="Haunted mazes, live scare actors, craft potions, and the ultimate Halloween After Dark experience. Book your tickets now!">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Custom Fonts & Fallback -->
+  <link rel="stylesheet" href="./assets/font/font.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- #PRELOADER -->
+  <div class="preloader" data-preloader id="appPreloader">
+    <div class="circle"></div>
+    <p class="preloader-text">Awakening the Shadows...</p>
+  </div>
+
+  <!-- #HEADER -->
+  <header class="header" data-header id="siteHeader">
+    <div class="container">
+
+      <a href="#top" class="logo" id="headerLogo" aria-label="Halloween Party Home">
+        <img src="./assets/images/logo.svg" width="140" height="24" alt="Halloween Party Logo">
+      </a>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar" data-navbar id="mainNavbar" aria-label="Primary Navigation">
+        <ul class="navbar-list">
+          <li><a href="#about" class="navbar-link">About</a></li>
+          <li><a href="#services" class="navbar-link">Attractions</a></li>
+          <li><a href="#pricing" class="navbar-link">Pricing</a></li>
+          <li><a href="#booking" class="navbar-link">Booking</a></li>
+          <li><a href="#testimonials" class="navbar-link">Reviews</a></li>
+          <li><a href="#sponsors" class="navbar-link">Partners</a></li>
+          <li><a href="#faq" class="navbar-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons (Spooky Audio + Mobile Nav Toggler) -->
+      <div class="header-actions">
+        <button class="sound-toggle-btn" id="soundToggleBtn" aria-label="Toggle eerie atmospheric sound synthesizer">
+          <ion-icon name="volume-mute-outline" id="soundIcon" aria-hidden="true"></ion-icon>
+          <span id="soundText">Sound: OFF</span>
+        </button>
+
+        <button class="nav-toggle-btn" aria-label="Toggle navigation menu" data-nav-toggler id="navToggler">
+          <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+          <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="nav-backdrop" data-nav-backdrop id="navBackdrop"></div>
+
+  <main>
+    <article>
+
+      <!-- #HERO SECTION -->
+      <section class="hero" id="hero" aria-label="Halloween Hero Showcase" style="background-image: url('./assets/images/hero-bg.png')">
+        <!-- Ambient Glowing Embers & Spooky Particles Canvas -->
+        <canvas id="heroParticles" style="position: absolute; inset: 0; pointer-events: none; z-index: 1; width: 100%; height: 100%;"></canvas>
+
+        <div class="container">
+          <p class="hero-subtitle">After Dark Event 2026</p>
+
+          <h1 class="hero-title">Halloween Party</h1>
+
+          <p class="hero-text">
+            Do you dare explore our haunted historic places in the dark this Halloween? Step inside Blackwood Manor, face over 50 live ghouls in immersive horror mazes, and taste cursed craft brews.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="hero-btns">
+            <a href="#booking" class="btn btn-primary" id="heroBuyTicketsBtn">
+              <span>Buy Tickets</span>
+              <ion-icon name="ticket-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+            <a href="#services" class="btn btn-outline" id="heroExploreBtn">
+              <span>Explore Attractions</span>
+              <ion-icon name="flashlight-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <!-- Countdown to Halloween Midnight -->
+          <div class="countdown-wrapper" id="heroCountdown">
+            <div class="countdown-heading">
+              <span>Countdown to the Witching Hour</span>
+              <span>Oct 31, 8:00 PM</span>
+            </div>
+
+            <div class="countdown-grid">
+              <div class="countdown-card">
+                <span class="countdown-number" id="cd-days">24</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-card">
+                <span class="countdown-number" id="cd-hours">09</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-card">
+                <span class="countdown-number" id="cd-mins">45</span>
+                <span class="countdown-label">Mins</span>
+              </div>
+              <div class="countdown-card">
+                <span class="countdown-number" id="cd-secs">18</span>
+                <span class="countdown-label">Secs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #ABOUT SECTION -->
+      <section class="section about" id="about" aria-label="About The Event">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">The Legend of Blackwood</p>
+            <h2 class="section-title">Historic Haunts Awakened After Dark</h2>
+            <p class="section-text">
+              First erected in 1884, the Blackwood Grounds hold century-old mysteries. Once a year when the veil thins, our 40-acre estate transforms into the ultimate nocturnal festival of frights, music, and dark arts.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <!-- Left: Visual Atmosphere Card -->
+            <div class="about-card-visual" id="aboutVisualCard">
+              <p class="legend-quote">"Once the iron gates lock behind you, there is only one way through the dark..."</p>
+              <p class="legend-description">
+                Featuring Hollywood-grade special effects, certified haunt actors, hyper-realistic crypt builds, and synchronized binaural audio design crafted to test the bravest souls.
+              </p>
+
+              <div class="feature-pills">
+                <span class="feature-pill"><ion-icon name="shield-checkmark-outline"></ion-icon> Safe-Word Zone</span>
+                <span class="feature-pill"><ion-icon name="flash-outline"></ion-icon> Strobe & Fog FX</span>
+                <span class="feature-pill"><ion-icon name="beer-outline"></ion-icon> Cursed Tavern</span>
+                <span class="feature-pill"><ion-icon name="musical-notes-outline"></ion-icon> Live Stage</span>
+              </div>
+            </div>
+
+            <!-- Right: Event Highlights & Story -->
+            <div class="about-content" id="aboutContent">
+              <h3 class="section-title" style="font-size: 2.8rem; margin-bottom: 15px;">What Awaits You in the Shadows</h3>
+              <p class="section-text" style="margin-bottom: 18px;">
+                Whether you seek spine-chilling adrenaline in our underground labyrinth or prefer sipping smoking cauldron punch by our gothic DJ fire pits, Halloween After Dark delivers an unforgettable autumn ritual.
+              </p>
+              <p class="section-text">
+                All attractions are guided by experienced safety wardens with accessible paths and optional low-scare glow necklaces for guests who prefer to observe without direct actor interactions.
+              </p>
+
+              <div style="margin-top: 25px;">
+                <a href="#services" class="btn" id="aboutViewMazesBtn">
+                  <span>View All 6 Mazes</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Statistics Banner -->
+          <div class="stats-grid" id="aboutStatsGrid">
+            <div class="stat-item">
+              <p class="stat-value">50+</p>
+              <p class="stat-title">Live Scare Actors</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">6</p>
+              <p class="stat-title">Haunted Mazes</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">15k+</p>
+              <p class="stat-title">Annual Survivors</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">4.9★</p>
+              <p class="stat-title">Fear Rating</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #SERVICES / ATTRACTIONS SECTION -->
+      <section class="section services" id="services" aria-label="Attractions and Experiences">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">Choose Your Nightmare</p>
+            <h2 class="section-title">Attractions & Spooky Zones</h2>
+            <p class="section-text">
+              From subterranean crypt crawls to occult escape rooms and lively witch taverns, explore every corner of the Blackwood Estate.
+            </p>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="filter-bar" id="attractionFilterBar" role="tablist" aria-label="Filter Attractions">
+            <button class="filter-btn active" data-filter="all" id="filterAll">All Attractions</button>
+            <button class="filter-btn" data-filter="mazes" id="filterMazes">Haunted Mazes</button>
+            <button class="filter-btn" data-filter="shows" id="filterShows">Shows & Escapes</button>
+            <button class="filter-btn" data-filter="potions" id="filterPotions">Food & Potions</button>
+          </div>
+
+          <!-- Attractions Grid -->
+          <div class="attractions-grid" id="attractionsGrid">
+
+            <!-- Card 1 -->
+            <div class="attraction-card" data-category="mazes" id="cardCrypt">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="skull-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="Extreme 5/5">🎃🎃🎃🎃🎃</span>
+                  </div>
+                </div>
+                <span class="badge badge-danger">Underground Horror</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">The Crypt of Shadows</h3>
+                <p class="attraction-desc">
+                  Descend 30 feet below ground through narrow catacomb passages in total blackout, guided only by flickering lanterns as ancient cryptkeepers stalk the halls.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="time-outline"></ion-icon> 25 Mins</span>
+                  <span class="meta-item"><ion-icon name="walk-outline"></ion-icon> Walking Maze</span>
+                  <span class="meta-item"><ion-icon name="alert-circle-outline"></ion-icon> Age 13+</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="vip">Reserve Fast-Pass</a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="attraction-card" data-category="mazes" id="cardCornfield">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="moon-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="High 4/5">🎃🎃🎃🎃🌑</span>
+                  </div>
+                </div>
+                <span class="badge badge-orange">Outdoor Labyrinth</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">Cursed Cornfield Labyrinth</h3>
+                <p class="attraction-desc">
+                  Twisted 8-foot corn stalks hide harvest scarecrows that awaken when you step off the beaten track. Watch your rear—the crows aren't the only ones watching.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="time-outline"></ion-icon> 30 Mins</span>
+                  <span class="meta-item"><ion-icon name="trail-sign-outline"></ion-icon> 2-Acre Maze</span>
+                  <span class="meta-item"><ion-icon name="flashlight-outline"></ion-icon> Flashlight Req.</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="general">Get General Pass</a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="attraction-card" data-category="mazes" id="cardAsylum">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="medkit-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="Intense 5/5">🎃🎃🎃🎃🎃</span>
+                  </div>
+                </div>
+                <span class="badge badge-danger">Psychological Thriller</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">Blackwood Sanitarium 1892</h3>
+                <p class="attraction-desc">
+                  Step inside the abandoned ward where unethical experiments took place. Immersive actors, pneumatic jump mechanics, and distorted mirror chambers await.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="time-outline"></ion-icon> 20 Mins</span>
+                  <span class="meta-item"><ion-icon name="people-outline"></ion-icon> 4-Person Groups</span>
+                  <span class="meta-item"><ion-icon name="warning-outline"></ion-icon> Strobe FX</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="vip">Reserve Fast-Pass</a>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="attraction-card" data-category="shows" id="cardStage">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="flame-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="Fun & Moderate 2/5">🎃🎃🌑🌑🌑</span>
+                  </div>
+                </div>
+                <span class="badge badge-teal">Live Entertainment</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">Gothic DJ & Fire Séance</h3>
+                <p class="attraction-desc">
+                  Dance the night away in our outdoor cemetery amphitheater. High-energy gothic EDM beats, mesmerizing fire-breathers, costume pageants, and laser spectacles.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="time-outline"></ion-icon> Hourly Shows</span>
+                  <span class="meta-item"><ion-icon name="musical-notes-outline"></ion-icon> Live DJs</span>
+                  <span class="meta-item"><ion-icon name="trophy-outline"></ion-icon> $1,000 Costume Win</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="general">Included with Entry</a>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="attraction-card" data-category="potions" id="cardTavern">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="wine-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="Chilled & Tasty 1/5">🎃🌑🌑🌑🌑</span>
+                  </div>
+                </div>
+                <span class="badge badge-teal">Gourmet Treats</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">Witches' Potion Tavern</h3>
+                <p class="attraction-desc">
+                  Catch your breath and warm up by our crackling bonfires. Savor steaming cauldron ciders, spooky themed burgers, pumpkin ale, and smoking dry-ice mocktails.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="restaurant-outline"></ion-icon> Full Menu</span>
+                  <span class="meta-item"><ion-icon name="wine-outline"></ion-icon> 21+ Bar & Mocktails</span>
+                  <span class="meta-item"><ion-icon name="bonfire-outline"></ion-icon> Fire Pits</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="vip">VIP Token Included</a>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="attraction-card" data-category="shows" id="cardEscape">
+              <div>
+                <div class="card-top">
+                  <div class="card-icon-wrap"><ion-icon name="key-outline"></ion-icon></div>
+                  <div class="fear-indicator">
+                    <span class="fear-label">Fear:</span>
+                    <span title="Thrilling 4/5">🎃🎃🎃🎃🌑</span>
+                  </div>
+                </div>
+                <span class="badge badge-orange">Escape Room</span>
+                <h3 class="attraction-title" style="margin-top: 10px;">Midnight Escape Chamber</h3>
+                <p class="attraction-desc">
+                  Trapped in Lord Blackwood's private study, your squad has exactly 25 minutes to decode ancient occult glyphs and unlock the iron grate before the clock strikes twelve.
+                </p>
+              </div>
+              <div>
+                <div class="attraction-meta">
+                  <span class="meta-item"><ion-icon name="time-outline"></ion-icon> 25 Mins</span>
+                  <span class="meta-item"><ion-icon name="grid-outline"></ion-icon> Puzzle Game</span>
+                  <span class="meta-item"><ion-icon name="ribbon-outline"></ion-icon> Escape Badge</span>
+                </div>
+                <a href="#booking" class="btn btn-sm" data-pricing-tier="coven">Book with Coven Pass</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #PRICING SECTION -->
+      <section class="section pricing" id="pricing" aria-label="Event Pricing and Passes">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">Admission Passes</p>
+            <h2 class="section-title">Select Your Night Pass</h2>
+            <p class="section-text">
+              Choose your level of access. Fast-pass holders skip general queues. All passes grant full festival grounds access and live performances.
+            </p>
+          </div>
+
+          <div class="pricing-grid" id="pricingGrid">
+
+            <!-- Plan 1 -->
+            <div class="pricing-card" id="pricingGeneral">
+              <div class="pricing-header">
+                <h3 class="pricing-name">Zombie General Pass</h3>
+                <p class="pricing-tagline">Standard festival admission</p>
+                <div class="pricing-cost">
+                  <span class="cost-symbol">$</span>
+                  <span class="cost-amount">35</span>
+                  <span class="cost-period">/ person</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Access to festival grounds</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Entry to 3 haunted mazes</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Live DJ & Fire Séance shows</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Costume contest entry</li>
+                <li class="pricing-feature disabled"><ion-icon name="close-circle"></ion-icon> Fast-pass skip the line</li>
+                <li class="pricing-feature disabled"><ion-icon name="close-circle"></ion-icon> Free potion beverage voucher</li>
+              </ul>
+
+              <button class="btn btn-outline" data-pricing-tier="general" id="btnChooseGeneral">Choose General Pass</button>
+            </div>
+
+            <!-- Plan 2 (Popular) -->
+            <div class="pricing-card popular" id="pricingVip">
+              <div class="popular-ribbon">Most Popular</div>
+              <div class="pricing-header">
+                <h3 class="pricing-name">VIP Witching Pass</h3>
+                <p class="pricing-tagline">Express line skip + all 6 mazes</p>
+                <div class="pricing-cost">
+                  <span class="cost-symbol">$</span>
+                  <span class="cost-amount">65</span>
+                  <span class="cost-period">/ person</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Unlimited access to all 6 mazes</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> <strong>Express Fast-Pass Queue skip</strong></li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> 1 Free Signature Potion Cocktail</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> VIP Haunted Lounge with fire pit</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Commemorative Glowing Badge</li>
+                <li class="pricing-feature disabled"><ion-icon name="close-circle"></ion-icon> Secret underground crypt tour</li>
+              </ul>
+
+              <button class="btn btn-primary" data-pricing-tier="vip" id="btnChooseVip">Choose VIP Witching</button>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="pricing-card" id="pricingCoven">
+              <div class="pricing-header">
+                <h3 class="pricing-name">Coven Master Pass</h3>
+                <p class="pricing-tagline">Ultimate VIP experience & private tour</p>
+                <div class="pricing-cost">
+                  <span class="cost-symbol">$</span>
+                  <span class="cost-amount">120</span>
+                  <span class="cost-period">/ person</span>
+                </div>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> <strong>All VIP benefits included</strong></li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Secret Underground Crypt Tour</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Midnight Escape Chamber entry</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Souvenir Cauldron Mug + Refills</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Free Valet VIP Parking</li>
+                <li class="pricing-feature"><ion-icon name="checkmark-circle"></ion-icon> Behind-the-scenes actor meet & greet</li>
+              </ul>
+
+              <button class="btn btn-outline" data-pricing-tier="coven" id="btnChooseCoven">Choose Coven Master</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #BOOKING SECTION -->
+      <section class="section booking" id="booking" aria-label="Interactive Ticket Booking">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">Real-Time Reservation</p>
+            <h2 class="section-title">Book Your Halloween Passes</h2>
+            <p class="section-text">
+              Select your date, entry time slot, and guest count. Get an instant printable boarding pass with unique QR-code validation.
+            </p>
+          </div>
+
+          <form class="booking-layout" id="bookingForm" novalidate>
+
+            <!-- Left: Configurator -->
+            <div class="booking-box" id="bookingConfigurator">
+
+              <!-- Date Picker -->
+              <h3 class="form-group-title">
+                <ion-icon name="calendar-outline"></ion-icon> 1. Select Date
+              </h3>
+              <div class="date-selector-grid" id="datePickerGrid">
+                <div class="date-pill" data-date="Oct 29">
+                  <span class="date-pill-day">Thu</span>
+                  <span class="date-pill-date">Oct 29</span>
+                </div>
+                <div class="date-pill" data-date="Oct 30">
+                  <span class="date-pill-day">Fri</span>
+                  <span class="date-pill-date">Oct 30</span>
+                </div>
+                <div class="date-pill active" data-date="Oct 31">
+                  <span class="date-pill-day">Sat (Main)</span>
+                  <span class="date-pill-date">Oct 31</span>
+                </div>
+                <div class="date-pill" data-date="Nov 01">
+                  <span class="date-pill-day">Sun</span>
+                  <span class="date-pill-date">Nov 01</span>
+                </div>
+              </div>
+
+              <!-- Time Slot -->
+              <h3 class="form-group-title">
+                <ion-icon name="time-outline"></ion-icon> 2. Select Witching Slot
+              </h3>
+              <div class="slots-container" id="timeSlotsContainer">
+                <button type="button" class="slot-chip" data-slot="07:00 PM">07:00 PM (Twilight)</button>
+                <button type="button" class="slot-chip" data-slot="08:30 PM">08:30 PM (Nightfall)</button>
+                <button type="button" class="slot-chip active" data-slot="10:00 PM">10:00 PM (Peak Fear)</button>
+                <button type="button" class="slot-chip" data-slot="Midnight">Midnight (12:00 AM)</button>
+              </div>
+
+              <!-- Admission Tier -->
+              <h3 class="form-group-title">
+                <ion-icon name="ribbon-outline"></ion-icon> 3. Choose Admission Tier
+              </h3>
+              <div class="tier-pills-container" id="tierChoices">
+                <div class="tier-choice-card" data-tier="general">
+                  <div class="tier-choice-info">
+                    <h4>General Pass</h4>
+                    <p>3 Mazes Entry</p>
+                  </div>
+                  <span class="tier-choice-price">$35</span>
+                </div>
+
+                <div class="tier-choice-card active" data-tier="vip">
+                  <div class="tier-choice-info">
+                    <h4>VIP Witching</h4>
+                    <p>Express Fast-Pass</p>
+                  </div>
+                  <span class="tier-choice-price">$65</span>
+                </div>
+
+                <div class="tier-choice-card" data-tier="coven">
+                  <div class="tier-choice-info">
+                    <h4>Coven Master</h4>
+                    <p>All-Access Tour</p>
+                  </div>
+                  <span class="tier-choice-price">$120</span>
+                </div>
+              </div>
+
+              <!-- Quantity Stepper -->
+              <h3 class="form-group-title">
+                <ion-icon name="people-outline"></ion-icon> 4. Number of Guests
+              </h3>
+              <div class="counter-row">
+                <div>
+                  <span style="color: var(--white); font-weight: 600;">Admission Tickets</span>
+                  <p style="color: var(--text-dim); font-size: 1.2rem;">Max 10 per reservation</p>
+                </div>
+                <div class="counter-controls">
+                  <button type="button" class="stepper-btn" id="btnMinus" aria-label="Decrease tickets">−</button>
+                  <span class="counter-val" id="ticketQuantity">2</span>
+                  <button type="button" class="stepper-btn" id="btnPlus" aria-label="Increase tickets">+</button>
+                </div>
+              </div>
+
+              <!-- Add-ons -->
+              <h3 class="form-group-title">
+                <ion-icon name="sparkles-outline"></ion-icon> 5. Optional Add-ons
+              </h3>
+              <div class="addons-list">
+                <label class="addon-label">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-input" data-addon="fastpass" id="addonFastpass">
+                    <div>
+                      <div class="addon-title">Line-Skip Wristband</div>
+                      <div class="addon-desc">Express queue bypass on all maze entries</div>
+                    </div>
+                  </div>
+                  <span class="addon-price">+$15 / person</span>
+                </label>
+
+                <label class="addon-label">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-input" data-addon="mug" id="addonMug">
+                    <div>
+                      <div class="addon-title">Haunted Cauldron Souvenir Mug</div>
+                      <div class="addon-desc">Includes 1 free refill of warm spiced cider</div>
+                    </div>
+                  </div>
+                  <span class="addon-price">+$10 / person</span>
+                </label>
+
+                <label class="addon-label">
+                  <div class="addon-left">
+                    <input type="checkbox" class="addon-input" data-addon="parking" id="addonParking">
+                    <div>
+                      <div class="addon-title">VIP Preferred Parking Spot</div>
+                      <div class="addon-desc">Front-row reserved parking near main gate</div>
+                    </div>
+                  </div>
+                  <span class="addon-price">+$12 flat</span>
+                </label>
+              </div>
+
+              <!-- Contact Information -->
+              <h3 class="form-group-title">
+                <ion-icon name="mail-outline"></ion-icon> 6. Primary Ticket Holder
+              </h3>
+              <div class="fields-grid">
+                <input type="text" class="input-field" placeholder="Full Legal Name" id="guestName" required value="Alexander Blackwood">
+                <input type="email" class="input-field" placeholder="Email Address" id="guestEmail" required value="alexander@blackwoodhaunt.com">
+              </div>
+
+            </div>
+
+            <!-- Right: Order Summary -->
+            <div class="summary-box" id="bookingSummary">
+              <h3 class="section-title" style="font-size: 2.4rem; margin-bottom: 5px;">Order Summary</h3>
+              <p class="section-text" style="font-size: 1.4rem;">Review your Halloween expedition details</p>
+
+              <div class="summary-details">
+                <div class="summary-row">
+                  <span>Selected Package:</span>
+                  <span id="sumTierName">VIP Witching Pass</span>
+                </div>
+                <div class="summary-row">
+                  <span>Date & Slot:</span>
+                  <span id="sumDateTime">Oct 31 @ 10:00 PM</span>
+                </div>
+                <div class="summary-row">
+                  <span>Tickets:</span>
+                  <span id="sumTickets">2x Tickets</span>
+                </div>
+                <div class="summary-row">
+                  <span>Base Admission:</span>
+                  <span id="sumSubtotal">$130</span>
+                </div>
+                <div class="summary-row">
+                  <span>Selected Add-ons:</span>
+                  <span id="sumAddons">$0</span>
+                </div>
+                <div class="summary-row">
+                  <span>Service & Facility Fee:</span>
+                  <span style="color: var(--medium-turquoise);">Waived (Free)</span>
+                </div>
+              </div>
+
+              <div class="summary-total">
+                <span>Grand Total:</span>
+                <span class="summary-total-amount" id="sumTotal">$130</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="btnConfirmBooking">
+                <span>Confirm & Generate Pass</span>
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+              </button>
+
+              <div style="margin-top: 18px; text-align: center; color: var(--text-dim); font-size: 1.25rem;">
+                <p>🔒 Instant digital confirmation • Free cancellation up to 48 hrs before event</p>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- #TESTIMONIALS SECTION -->
+      <section class="section testimonials" id="testimonials" aria-label="Survivor Testimonials">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">Survivor Chronicles</p>
+            <h2 class="section-title">What Brave Guests Are Saying</h2>
+            <p class="section-text">
+              Over 15,000 thrill-seekers have braved Blackwood Manor. Read their unfiltered accounts.
+            </p>
+          </div>
+
+          <div class="testimonials-grid" id="testimonialsGrid">
+
+            <!-- Review 1 -->
+            <div class="testi-card">
+              <div>
+                <div class="testi-stars">🎃🎃🎃🎃🎃</div>
+                <p class="testi-quote">
+                  "The Crypt of Shadows is genuinely the most frightening haunted attraction on the West Coast. The live actors don't break character for a second. The set design felt like being inside an authentic 19th-century nightmare!"
+                </p>
+              </div>
+              <div class="testi-author">
+                <div class="author-avatar">👻</div>
+                <div>
+                  <h4 class="author-name">Elena Rostova</h4>
+                  <p class="author-badge">VIP Pass Holder • October 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testi-card">
+              <div>
+                <div class="testi-stars">🎃🎃🎃🎃🎃</div>
+                <p class="testi-quote">
+                  "We came with a group of 8 for my birthday. The Gothic DJ stage and smoking potion cocktails were incredible. Perfect balance of genuine jump-scares and high-energy party vibes!"
+                </p>
+              </div>
+              <div class="testi-author">
+                <div class="author-avatar">🧙‍♀️</div>
+                <div>
+                  <h4 class="author-name">Marcus Vance</h4>
+                  <p class="author-badge">Coven Master Group • October 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testi-card">
+              <div>
+                <div class="testi-stars">🎃🎃🎃🎃🎃</div>
+                <p class="testi-quote">
+                  "The Cornfield Labyrinth at midnight in the fog is unmatched. We got completely turned around and had the best adrenaline rush of the year. Booking our 2026 passes early!"
+                </p>
+              </div>
+              <div class="testi-author">
+                <div class="author-avatar">🦇</div>
+                <div>
+                  <h4 class="author-name">Sarah Chen</h4>
+                  <p class="author-badge">Annual Haunt Enthusiast • October 2025</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #SPONSORS / PARTNERS SECTION -->
+      <section class="section sponsors" id="sponsors" aria-label="Sponsors and Collaborators">
+        <div class="container">
+
+          <div class="section-header" style="margin-bottom: 35px;">
+            <p class="section-subtitle">Our Wicked Collaborators</p>
+            <h2 class="section-title">Official Event Partners</h2>
+          </div>
+
+          <div class="sponsors-grid" id="sponsorsGrid">
+            <div class="sponsor-item">
+              <ion-icon name="film-outline" class="sponsor-icon"></ion-icon>
+              <h4 class="sponsor-name">Grimm FX Studios</h4>
+              <p class="sponsor-type">Hollywood Special Effects</p>
+            </div>
+
+            <div class="sponsor-item">
+              <ion-icon name="beer-outline" class="sponsor-icon"></ion-icon>
+              <h4 class="sponsor-name">Midnight Brew Co.</h4>
+              <p class="sponsor-type">Craft Spooky Ciders</p>
+            </div>
+
+            <div class="sponsor-item">
+              <ion-icon name="headset-outline" class="sponsor-icon"></ion-icon>
+              <h4 class="sponsor-name">Phantom Audio Labs</h4>
+              <p class="sponsor-type">Binaural 3D Soundscapes</p>
+            </div>
+
+            <div class="sponsor-item">
+              <ion-icon name="color-wand-outline" class="sponsor-icon"></ion-icon>
+              <h4 class="sponsor-name">Occult Lighting Ltd.</h4>
+              <p class="sponsor-type">Atmospheric Lasers & Fog</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #FAQ ACCORDION SECTION -->
+      <section class="section faq" id="faq" aria-label="Frequently Asked Questions">
+        <div class="container">
+
+          <div class="section-header">
+            <p class="section-subtitle">Survival Manual</p>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-text">
+              Everything you need to know before walking through the iron gates.
+            </p>
+          </div>
+
+          <div class="faq-list" id="faqAccordion">
+
+            <!-- Item 1 -->
+            <div class="faq-item active">
+              <button class="faq-question" type="button">
+                <span>Are costumes allowed at the event?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, costumes are highly encouraged! In fact, we host a nightly $1,000 costume pageant at the main stage. For guest safety, realistic weaponry, full-face latex masks that obstruct vision in dark areas, and sharp metal accessories are strictly prohibited.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>What is the recommended age limit?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We recommend guests be at least 13 years old for the extreme mazes (The Crypt of Shadows and Blackwood Sanitarium). For younger guests or those with sensory sensitivities, we provide complimentary glowing "No-Scare" necklaces at guest relations so scare actors maintain respectful distance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Do scare actors touch guests?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No. Our scare actors will jump, scream, stalk, and surprise you up close to deliver maximum terror, but they operate under strict no-contact professional safety policies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>What happens if it rains on my booked night?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The Halloween After Dark event operates rain or shine! In fact, rainy nights add an incredible Victorian atmospheric mood. All major haunted mazes except the cornfield are completely sheltered indoors or underground.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>How do digital tickets and check-in work?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Upon completing your booking on this site, your ticket pass is generated with a unique reference barcode. You can present the pass on your mobile smartphone screen or print it out at the gate scanners for contactless express entry.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Where is parking located and is it accessible?</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  General and ADA parking is available on-site at the South Gate of Blackwood Grounds. Preferred VIP parking passes can also be reserved during ticket checkout for direct front-row gate access.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #NEWSLETTER / SUMMON SECTION -->
+      <section class="section newsletter" id="newsletter" aria-label="Join the Summon List">
+        <div class="container">
+          <div class="newsletter-box">
+            <p class="section-subtitle">Stay Connected With The Crypt</p>
+            <h2 class="section-title">Join the Midnight Coven</h2>
+            <p class="section-text" style="max-width: 580px; margin-inline: auto;">
+              Sign up for secret early-access maze maps, flash ticket discounts, and behind-the-scenes actor reveal announcements.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" class="input-field" placeholder="Enter your email address..." required id="newsletterEmail">
+              <button type="submit" class="btn btn-primary" id="btnNewsletterSummon">
+                <span>Summon Me</span>
+                <ion-icon name="send-outline"></ion-icon>
+              </button>
+            </form>
+
+            <div class="newsletter-feedback" id="newsletterFeedback"></div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- #FOOTER -->
+  <footer class="footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <a href="#top" class="logo">
+            <img src="./assets/images/logo.svg" width="140" height="24" alt="Halloween Party Logo">
+          </a>
+          <p class="footer-text">
+            The premier Halloween destination for horror connoisseurs, thrill-seekers, and lovers of all things after dark.
+          </p>
+          <div class="social-list">
+            <a href="#" class="social-link" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" class="social-link" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#" class="social-link" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#" class="social-link" aria-label="Discord"><ion-icon name="logo-discord"></ion-icon></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">The Legend</a></li>
+            <li><a href="#services" class="footer-link">All 6 Attractions</a></li>
+            <li><a href="#pricing" class="footer-link">Ticket Packages</a></li>
+            <li><a href="#booking" class="footer-link">Reserve Passes</a></li>
+            <li><a href="#faq" class="footer-link">Visitor FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Event Hours -->
+        <div class="footer-col">
+          <h4 class="footer-title">Night Schedule</h4>
+          <ul class="footer-links">
+            <li class="footer-info-item">
+              <ion-icon name="time-outline"></ion-icon>
+              <span>Oct 25 – Nov 02<br><strong>07:00 PM – 02:00 AM</strong></span>
+            </li>
+            <li class="footer-info-item">
+              <ion-icon name="flame-outline"></ion-icon>
+              <span>Midnight Fire Séance<br><strong>Nightly at 12:00 AM</strong></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Location & Hotline -->
+        <div class="footer-col">
+          <h4 class="footer-title">Haunt Location</h4>
+          <div class="footer-info-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>666 Shadowveil Woods Way,<br>Historic Blackwood Estate</span>
+          </div>
+          <div class="footer-info-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <span>Hotline: +1 (800) 666-SPOOK</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Halloween Party After Dark Event. All rights reserved.</p>
+        <p>Crafted with haunting precision for all nocturnal adventurers.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- #BACK TO TOP BUTTON -->
+  <button class="back-to-top" data-back-to-top aria-label="Back to top of page" id="backToTopBtn">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </button>
+
+  <!-- #TICKET BOARDING PASS MODAL -->
+  <div class="modal-backdrop" id="ticketModal" role="dialog" aria-modal="true" aria-labelledby="modalTicketTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close ticket modal">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <!-- Printable Ticket Boarding Pass -->
+      <div class="ticket-pass" id="printablePass">
+        <div class="ticket-top">
+          <span class="ticket-badge">🎃 Halloween After Dark 2026</span>
+          <span class="ticket-code" id="tktCode">#HW-8924</span>
+        </div>
+
+        <h3 class="ticket-title" id="tktTier">VIP Witching Pass</h3>
+
+        <div class="ticket-meta-grid">
+          <div class="ticket-meta-cell">
+            <label>Ticket Holder</label>
+            <span id="tktGuest">Alexander Blackwood</span>
+          </div>
+          <div class="ticket-meta-cell">
+            <label>Date & Time Slot</label>
+            <span id="tktDateTime">Oct 31 @ 10:00 PM</span>
+          </div>
+          <div class="ticket-meta-cell">
+            <label>Quantity</label>
+            <span id="tktQty">2 Person(s)</span>
+          </div>
+          <div class="ticket-meta-cell">
+            <label>Total Paid</label>
+            <span id="tktTotal" style="color: var(--heat-wave);">$130</span>
+          </div>
+        </div>
+
+        <div class="ticket-barcode-area">
+          <!-- Vector SVG Barcode Mockup -->
+          <svg class="barcode-svg" viewBox="0 0 200 35" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="5" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="8" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="15" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="20" y="0" width="5" height="35" fill="#ffffff"/>
+            <rect x="28" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="33" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="39" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="43" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="50" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="55" y="0" width="5" height="35" fill="#ffffff"/>
+            <rect x="63" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="69" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="73" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="80" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="85" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="91" y="0" width="5" height="35" fill="#ffffff"/>
+            <rect x="99" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="104" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="111" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="115" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="121" y="0" width="5" height="35" fill="#ffffff"/>
+            <rect x="129" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="134" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="141" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="145" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="151" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="158" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="163" y="0" width="5" height="35" fill="#ffffff"/>
+            <rect x="171" y="0" width="1" height="35" fill="#ffffff"/>
+            <rect x="175" y="0" width="4" height="35" fill="#ffffff"/>
+            <rect x="182" y="0" width="3" height="35" fill="#ffffff"/>
+            <rect x="188" y="0" width="2" height="35" fill="#ffffff"/>
+            <rect x="193" y="0" width="4" height="35" fill="#ffffff"/>
+          </svg>
+          <span style="font-family: monospace; font-size: 1.1rem; color: var(--text-dim); letter-spacing: 2px;">SCAN AT GUEST GATES</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-outline btn-sm" id="printTicketBtn">
+          <ion-icon name="print-outline"></ion-icon>
+          <span>Print / Save Pass</span>
+        </button>
+        <button class="btn btn-primary btn-sm" id="modalDoneBtn">
+          <span>Done</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicon Script Links -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

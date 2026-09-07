@@ -1,0 +1,8 @@
+{
+  "name": "Halloween Party",
+  "description": "After Dark Event Halloween Party featuring haunted mazes, horror attractions, live booking calculator, and survivor experiences",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
